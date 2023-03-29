@@ -1,0 +1,133 @@
+body {
+  font-family: "Faktum", sans-serif;
+}
+
+#black-area {
+  height: 760px;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  background-image: url("../img/background.svg");
+  width: 100%;
+  height: 100vh;
+  height: 760px;
+  background-color: #111111;
+  z-index: -1;
+}
+
+.center {
+  // .center__error
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  &__error {
+    padding-top: 166px;
+    h1 {
+      font-family: Faktum;
+      font-size: 111px;
+      font-weight: 600;
+      line-height: 122px;
+      letter-spacing: -0.02em;
+      text-align: center;
+      color: white;
+    }
+    h3 {
+      padding-top: 12px;
+      font-family: Faktum;
+      font-size: 28px;
+      font-weight: 600;
+      line-height: 31px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: white;
+    }
+  }
+
+  // .center__error-descr
+
+  &__error-descr {
+    padding-top: 32px;
+    width: 401px;
+    p {
+      font-family: Satoshi;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 22px;
+      letter-spacing: 0.01em;
+      text-align: center;
+      color: white;
+      opacity: 70%;
+    }
+  }
+
+  // .center__link
+
+  &__link {
+    margin-top: 44px;
+    padding: 17px 34px;
+    font-family: Satoshi;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19.6px;
+    letter-spacing: 0.01em;
+    border-radius: 10px;
+    background-color: #3c37ff;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #black-area {
+    height: 565px;
+  }
+
+  .background {
+    position: absolute;
+    top: 0;
+    height: 565px;
+    background-image: url("../img/background_small.svg");
+    background-repeat: no-repeat;
+    background-position: center 450px;
+    width: 100%;
+    background-color: #111111;
+    z-index: -1;
+  }
+
+  .center {
+    // .center__error
+
+    &__error {
+      padding-top: 88px;
+
+      h3 {
+        padding-top: 32px;
+        font-size: 18px;
+      }
+    }
+
+    // .center__error-descr
+
+    &__error-descr {
+      padding-top: 12px;
+      width: 280px;
+      p {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+
+    // .center__link
+
+    &__link {
+      margin-top: 58px;
+      padding: 11.5px 17px;
+      font-size: 12px;
+      line-height: 17px;
+    }
+  }
+}
